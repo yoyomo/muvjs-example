@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 import {button, div} from './node_modules/muvjs/muv-dom.js';
 
@@ -11,9 +11,9 @@ export const init =
 
 // UPDATE
 
-const Increment = "increment";
-const Decrement = "decrement";
-const Reset = "reset";
+const Increment = 'increment';
+const Decrement = 'decrement';
+const Reset = 'reset';
 
 export const update = model => action => {
   switch (action) {
