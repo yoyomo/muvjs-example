@@ -1,25 +1,3 @@
-# MUVisJS-example
-Both Modular and Static Examples of MuvJS
-
-### Setup
-Clone the repository
-```bash
-git clone git@github.com:yoyomo/muvjs-example.git
-cd muvjs-example
-```
-Run the commands
-```bash
-npm i
-npm start
-```
-Visit ```http://localhost:8080```,
-<br><br>
- and then update `App.mjs` to your liking
-
-## Example
-
-`App.mjs`
-```js
 "use strict";
 import {div, button} from 'muvjs/muv-dom';
 
@@ -130,9 +108,3 @@ export const subscriptions = dispatch => effect => {
 
 
 };
-
-```
-
-### Create MuvJS App
-You can now use a brew command to create a MuvJS app from scratch: 
-https://github.com/yoyomo/create-muvjs-app

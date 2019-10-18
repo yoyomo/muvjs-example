@@ -1,17 +1,23 @@
 {
-  "name": "test",
+  "name": "muvisjs",
   "version": "1.0.0",
   "description": "",
   "main": "serve.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node serve.js"
+    "start": "webpack-dev-server --open"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "http": "0.0.0",
-    "muvjs": "^1.0.0"
+    "muvjs": "^2.1.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.4",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
   }
 }
