@@ -1,4 +1,4 @@
-# MUVisJS-example
+# MUVisJS example
 Both Modular and Static Examples of MuvJS
 
 ### Setup
@@ -96,6 +96,11 @@ export const view = dispatch => model =>
     ]
   );
 
+  ```
+
+Optionally you can add these two functions (After v2)
+  ```js
+
 //IGNITION
 
 export const ignition = dispatch => {
@@ -133,7 +138,7 @@ export const subscriptions = dispatch => effect => {
 
 ```
 
-`index.mjs`
+`index.mjs` including `model`,`update`,`view`, and the now optional functions `ignition` and `subscriptions`
 ```js
 'use strict';
 
