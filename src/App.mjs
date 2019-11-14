@@ -76,7 +76,7 @@ export const view = dispatch => model =>
 
 //IGNITION
 
-export const ignite = dispatch => {
+export const ignition = dispatch => {
   dispatch(signIn());
 };
 

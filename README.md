@@ -98,7 +98,7 @@ export const view = dispatch => model =>
 
 //IGNITION
 
-export const ignite = dispatch => {
+export const ignition = dispatch => {
   dispatch(signIn());
 };
 
@@ -131,6 +131,29 @@ export const subscriptions = dispatch => effect => {
 
 };
 
+```
+
+`index.mjs`
+```js
+'use strict';
+
+import {muv} from 'muvjs/muv';
+import {model, update, view, ignition, subscriptions} from './App';
+
+muv({model, update, view, ignition, subscriptions})('root');
+```
+
+`index.html`
+```html
+<!DOCTYPE html>
+<html>
+<body>
+  
+<div id='root'></div>
+<script type='module' src='index.mjs'></script>
+
+</body>
+</html>
 ```
 
 ### Create MuvJS App

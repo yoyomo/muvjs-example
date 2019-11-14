@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "http": "0.0.0",
-    "muvjs": "^2.1.0"
+    "muvjs": "^2.2.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.0.4",
