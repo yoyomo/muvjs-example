@@ -1,5 +1,5 @@
 "use strict";
-import {div, button} from './muv-dom';
+import {div, button} from 'muvjs/index';
 
 // MODEL
 
