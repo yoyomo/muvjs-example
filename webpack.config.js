@@ -1,20 +1,26 @@
 const path = require('path');
-const CopyPlugin = require('copy-webpack-plugin');
+const outputPath = path.resolve(__dirname, './dist');
+const htmlContentPath = path.resolve(__dirname, './dist/html');
 
 module.exports = {
-  entry: './src/index.mjs',
   mode: 'development',
+  entry: './src/index.ts',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'index.mjs'
+    filename: 'bundle.js',
+    path: outputPath,
+  },
+  module: {
+    rules: [
+      {
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+    ],
+  },
+  resolve: {
+    extensions: [ '.ts', '.js' ],
   },
   devServer: {
-    contentBase: './dist'
+    contentBase: htmlContentPath
   },
-  plugins: [
-    new CopyPlugin([
-      { from: 'src/index.html', to: './' },
-      // { from: 'src/style.css', to: './' },
-    ]),
-  ],
 };
