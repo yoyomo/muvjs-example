@@ -1,6 +1,5 @@
 const path = require('path');
 const outputPath = path.resolve(__dirname, './dist');
-const htmlContentPath = path.resolve(__dirname, './dist/html');
 
 module.exports = {
   mode: 'development',
@@ -21,6 +20,6 @@ module.exports = {
     extensions: [ '.ts', '.js', '.mjs', '.d.ts' ],
   },
   devServer: {
-    contentBase: htmlContentPath
+    contentBase: outputPath
   },
 };
