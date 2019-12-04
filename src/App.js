@@ -10,10 +10,9 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
-exports.__esModule = true;
-var muv_dom_1 = require("./muv-dom");
 // MODEL
-exports.model = {
+import { button, div } from "muvjs/muv-dom";
+export var model = {
     count: 0
 };
 // UPDATE
@@ -42,7 +41,7 @@ var signIn = function () {
         type: SignIn
     };
 };
-exports.update = function (model) { return function (action) {
+export var update = function (model) { return function (action) {
     var effects = [];
     switch (action.type) {
         case Increment:
@@ -63,16 +62,16 @@ exports.update = function (model) { return function (action) {
     return { model: model, effects: effects };
 }; };
 // VIEW
-exports.view = function (dispatch) { return function (model) {
-    return muv_dom_1.div()([
+export var view = function (dispatch) { return function (model) {
+    return div()([
         ,
-        muv_dom_1.button({ onclsick: function () { return dispatch(decrement()); } })('-'),
-        muv_dom_1.div()(model.count),
-        muv_dom_1.button({ onclick: function () { return dispatch(increment()); } })('+')
+        button({ onclick: function () { return dispatch(decrement()); } })('-'),
+        div()(model.count),
+        button({ onclick: function () { return dispatch(increment()); } })('+')
     ]);
 }; };
 //IGNITION
-exports.ignition = function (dispatch) {
+export var ignition = function (dispatch) {
     dispatch(signIn());
 };
 //SUBSCRIPTIONS
@@ -82,7 +81,7 @@ var makeRequest = function () {
         type: AjaxRequest
     };
 };
-exports.subscriptions = function (dispatch) { return function (effect) {
+export var subscriptions = function (dispatch) { return function (effect) {
     switch (effect.type) {
         case AjaxRequest:
             var xhr_1 = new XMLHttpRequest();
@@ -96,3 +95,4 @@ exports.subscriptions = function (dispatch) { return function (effect) {
             break;
     }
 }; };
+//# sourceMappingURL=App.js.map

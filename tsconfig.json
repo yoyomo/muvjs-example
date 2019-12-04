@@ -1,16 +1,21 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
     "sourceMap": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
     "alwaysStrict": true,
+    "strict": true,
     "module": "es6",
     "target": "es5",
-    "lib": [
-      "es2019",
-      "dom"
-    ],
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+//    "lib": [
+//      "es2019",
+//      "dom"
+//    ],
     "noEmit": false,
     "declaration": true,
     "allowJs": true,

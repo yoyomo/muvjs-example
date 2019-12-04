@@ -1,7 +1,8 @@
 "use strict";
-import {div, button} from 'muvjs/index';
 
 // MODEL
+
+import {button, div} from "muvjs/muv-dom";
 
 export const model =
   {
