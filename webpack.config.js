@@ -5,11 +5,11 @@ module.exports = {
   entry: './src/index.mjs',
   mode: 'development',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'index.mjs'
   },
   devServer: {
-    contentBase: './dist'
+    contentBase: './docs'
   },
   plugins: [
     new CopyPlugin([
