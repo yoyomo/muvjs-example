@@ -161,6 +161,10 @@ muv({model, update, view, ignition, subscriptions})('root');
 </html>
 ```
 
+#### Typescript
+
+Clone the repository `ts`
+
 ### Create MuvJS App
 You can now use a brew command to create a MuvJS app from scratch: 
 https://github.com/yoyomo/create-muvjs-app
