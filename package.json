@@ -8,10 +8,10 @@
     "dev": "webpack-dev-server --open",
     "build": "webpack"
   },
-  "author": "",
+  "author": "Armando Ortiz",
   "license": "ISC",
   "dependencies": {
-    "muvjs": "^2.3.2"
+    "muvjs": "^2.3.3"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.1.1",
